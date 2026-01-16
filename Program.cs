@@ -18,13 +18,14 @@ var app = builder.Build();
 // Logger
 var logger = app.Services.GetRequiredService<ILogger<Program>>();
 
-// 🔑 Leer API Key desde variable de entorno
-var apiKey = builder.Configuration["ApiKey"] ?? Environment.GetEnvironmentVariable("API_KEY");
+// 🔑 API Key directamente (o desde variable de entorno)
+var apiKey = Environment.GetEnvironmentVariable("API_KEY")
+             ?? "api_token_2b7efc65-ac43-4401-8395-bf69446cdd5c";
 
 if (string.IsNullOrEmpty(apiKey))
 {
     logger.LogError("La API Key no está definida. Configura la variable de entorno API_KEY en Clever Cloud.");
-    throw new Exception("La API Key no está definida. Configura la variable de entorno API_KEY.");
+    throw new Exception("La API Key no está definida.");
 }
 
 // Swagger solo en desarrollo
@@ -37,37 +38,30 @@ if (app.Environment.IsDevelopment())
 // Routing
 app.UseRouting();
 
-// 🔐 Middleware para proteger la API con API Key y log
+// 🔐 Middleware para proteger la API con API Key
 app.Use(async (context, next) =>
 {
     if (context.Request.Path.StartsWithSegments("/api"))
     {
         if (!context.Request.Headers.TryGetValue("x-api-key", out var extractedApiKey))
         {
-            logger.LogWarning("Acceso denegado: API Key no proporcionada. Path: {Path}", context.Request.Path);
             context.Response.StatusCode = StatusCodes.Status401Unauthorized;
             await context.Response.WriteAsync("API Key requerida");
             return;
         }
 
-        // Log para debugging: qué Key llega y cuál se espera
-        logger.LogInformation("API Key recibida: {KeyRecibida}, API Key esperada: {KeyEsperada}", extractedApiKey, apiKey);
-
         if (!apiKey.Equals(extractedApiKey))
         {
-            logger.LogWarning("Acceso denegado: API Key inválida. Path: {Path}", context.Request.Path);
             context.Response.StatusCode = StatusCodes.Status403Forbidden;
             await context.Response.WriteAsync("API Key inválida");
             return;
         }
-
-        logger.LogInformation("Acceso autorizado a {Path}", context.Request.Path);
     }
 
     await next();
 });
 
-// Autorización y endpoints
+// Endpoints
 app.UseAuthorization();
 app.MapControllers();
 

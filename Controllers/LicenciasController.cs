@@ -2,6 +2,7 @@
 using LicenciaSistemas.Data;
 using LicenciaSistemas.Models;
 using MySql.Data.MySqlClient;
+using System.Collections.Generic;
 
 namespace LicenciaSistemas.Controllers
 {
@@ -16,18 +17,16 @@ namespace LicenciaSistemas.Controllers
             _db = db;
         }
 
-        // 🔍 LISTAR TODAS LAS LICENCIAS
+        // 🔹 Listar todas las licencias
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<Licencia> lista = new();
-
+            var lista = new List<Licencia>();
             using var conn = _db.GetConnection();
             conn.Open();
 
-            string sql = "SELECT * FROM licencias";
-            MySqlCommand cmd = new(sql, conn);
-
+            var sql = "SELECT * FROM licencias";
+            using var cmd = new MySqlCommand(sql, conn);
             using var reader = cmd.ExecuteReader();
             while (reader.Read())
             {
@@ -41,24 +40,22 @@ namespace LicenciaSistemas.Controllers
                     Habilitado = reader.GetInt32("habilitado")
                 });
             }
-
             return Ok(lista);
         }
 
-        // 🔍 OBTENER LICENCIA POR CÓDIGO
+        // 🔹 Obtener por código
         [HttpGet("{codigo}")]
         public IActionResult GetByCodigo(string codigo)
         {
             using var conn = _db.GetConnection();
             conn.Open();
 
-            string sql = "SELECT * FROM licencias WHERE numero_habilitacion = @codigo";
-            MySqlCommand cmd = new(sql, conn);
+            var sql = "SELECT * FROM licencias WHERE numero_habilitacion=@codigo";
+            using var cmd = new MySqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@codigo", codigo);
-
             using var reader = cmd.ExecuteReader();
-            if (!reader.Read())
-                return NotFound();
+
+            if (!reader.Read()) return NotFound();
 
             return Ok(new Licencia
             {
@@ -71,45 +68,42 @@ namespace LicenciaSistemas.Controllers
             });
         }
 
-        // ➕ CREAR LICENCIA
+        // 🔹 Crear licencia
         [HttpPost]
         public IActionResult Create(Licencia lic)
         {
             using var conn = _db.GetConnection();
             conn.Open();
 
-            string sql = @"INSERT INTO licencias
-                (nombre_empresa, cuota_pagar, cuota_pagada, numero_habilitacion, habilitado)
-                VALUES (@n, @cp, @cpg, @num, @h)";
-
-            MySqlCommand cmd = new(sql, conn);
+            var sql = @"INSERT INTO licencias
+                        (nombre_empresa, cuota_pagar, cuota_pagada, numero_habilitacion, habilitado)
+                        VALUES (@n, @cp, @cpg, @num, @h)";
+            using var cmd = new MySqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@n", lic.NombreEmpresa);
             cmd.Parameters.AddWithValue("@cp", lic.CuotaPagar);
             cmd.Parameters.AddWithValue("@cpg", lic.CuotaPagada);
             cmd.Parameters.AddWithValue("@num", lic.NumeroHabilitacion);
             cmd.Parameters.AddWithValue("@h", lic.Habilitado);
-
             cmd.ExecuteNonQuery();
 
             return Ok(new { success = true, mensaje = "Licencia creada" });
         }
 
-        // ✏️ ACTUALIZAR LICENCIA
+        // 🔹 Actualizar licencia
         [HttpPut("{id}")]
         public IActionResult Update(int id, Licencia lic)
         {
             using var conn = _db.GetConnection();
             conn.Open();
 
-            string sql = @"UPDATE licencias SET
-                nombre_empresa = @n,
-                cuota_pagar = @cp,
-                cuota_pagada = @cpg,
-                numero_habilitacion = @num,
-                habilitado = @h
-                WHERE id = @id";
-
-            MySqlCommand cmd = new(sql, conn);
+            var sql = @"UPDATE licencias SET
+                        nombre_empresa=@n,
+                        cuota_pagar=@cp,
+                        cuota_pagada=@cpg,
+                        numero_habilitacion=@num,
+                        habilitado=@h
+                        WHERE id=@id";
+            using var cmd = new MySqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@n", lic.NombreEmpresa);
             cmd.Parameters.AddWithValue("@cp", lic.CuotaPagar);
             cmd.Parameters.AddWithValue("@cpg", lic.CuotaPagada);
@@ -117,40 +111,33 @@ namespace LicenciaSistemas.Controllers
             cmd.Parameters.AddWithValue("@h", lic.Habilitado);
             cmd.Parameters.AddWithValue("@id", id);
 
-            if (cmd.ExecuteNonQuery() == 0)
-                return NotFound();
-
+            if (cmd.ExecuteNonQuery() == 0) return NotFound();
             return Ok(new { success = true, mensaje = "Licencia actualizada" });
         }
 
-        // ❌ ELIMINAR LICENCIA
+        // 🔹 Eliminar licencia
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             using var conn = _db.GetConnection();
             conn.Open();
 
-            string sql = "DELETE FROM licencias WHERE id = @id";
-            MySqlCommand cmd = new(sql, conn);
+            var sql = "DELETE FROM licencias WHERE id=@id";
+            using var cmd = new MySqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@id", id);
 
-            if (cmd.ExecuteNonQuery() == 0)
-                return NotFound();
-
+            if (cmd.ExecuteNonQuery() == 0) return NotFound();
             return Ok(new { success = true, mensaje = "Licencia eliminada" });
         }
 
-
-
-        // 🔐 VERIFICACIÓN PARA WPF
-
+        // 🔹 Verificar licencia
         [HttpGet("verificar/{codigo}")]
         public IActionResult Verificar(string codigo)
         {
             using var conn = _db.GetConnection();
             conn.Open();
 
-            string sql = "SELECT habilitado FROM licencias WHERE numero_habilitacion=@codigo LIMIT 1";
+            var sql = "SELECT habilitado FROM licencias WHERE numero_habilitacion=@codigo LIMIT 1";
             using var cmd = new MySqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@codigo", codigo);
 
@@ -158,7 +145,6 @@ namespace LicenciaSistemas.Controllers
             if (result == null) return NotFound(new { success = false });
 
             bool habilitado = Convert.ToInt32(result) == 1;
-
             return Ok(new { success = true, habilitado });
         }
     }
