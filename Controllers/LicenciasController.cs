@@ -140,31 +140,26 @@ namespace LicenciaSistemas.Controllers
             return Ok(new { success = true, mensaje = "Licencia eliminada" });
         }
 
+
+
         // 🔐 VERIFICACIÓN PARA WPF
+
         [HttpGet("verificar/{codigo}")]
         public IActionResult Verificar(string codigo)
         {
             using var conn = _db.GetConnection();
             conn.Open();
 
-            string sql = @"SELECT habilitado FROM licencias
-                           WHERE numero_habilitacion = @codigo";
-
-            MySqlCommand cmd = new(sql, conn);
+            string sql = "SELECT habilitado FROM licencias WHERE numero_habilitacion=@codigo LIMIT 1";
+            using var cmd = new MySqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@codigo", codigo);
 
             var result = cmd.ExecuteScalar();
-
-            if (result == null)
-                return NotFound(new { success = false });
+            if (result == null) return NotFound(new { success = false });
 
             bool habilitado = Convert.ToInt32(result) == 1;
 
-            return Ok(new
-            {
-                success = true,
-                habilitado
-            });
+            return Ok(new { success = true, habilitado });
         }
     }
 }
