@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\licenciasistemas.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:licenciasistemas.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\controllers\\licenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:controllers\\licenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\controllers\\licenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:controllers\\licenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\licenciasistemas.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:licenciasistemas.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 130,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -103,13 +103,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABeAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T05:54:36.778Z",
               "EditorCaption": ""
@@ -152,20 +152,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "LicenciasController.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Controllers\\LicenciasController.cs",
               "RelativeDocumentMoniker": "Controllers\\LicenciasController.cs",
               "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Controllers\\LicenciasController.cs",
               "RelativeToolTip": "Controllers\\LicenciasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T05:51:52.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "LicenciaSistemas.http",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\LicenciaSistemas.http",
               "RelativeDocumentMoniker": "LicenciaSistemas.http",
@@ -173,8 +173,7 @@
               "RelativeToolTip": "LicenciaSistemas.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-01-16T07:17:47.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T07:17:47.786Z"
             },
             {
               "$type": "Document",
@@ -186,8 +185,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-16T05:55:32.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T05:55:32.417Z"
             }
           ]
         },
