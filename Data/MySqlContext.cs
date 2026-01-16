@@ -13,8 +13,8 @@ namespace LicenciaSistemas.Data
 
         public MySqlConnection GetConnection()
         {
-            return new MySqlConnection(
-                _config.GetConnectionString("MySqlConnection"));
+            var cs = _config.GetConnectionString("MySqlConnection");
+            return new MySqlConnection(cs);
         }
     }
 }
