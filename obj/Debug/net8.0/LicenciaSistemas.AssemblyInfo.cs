@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LicenciaSistemas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5041e3eeeed03d50ed68d7e7bfc227b2e4941cf9")]
 [assembly: System.Reflection.AssemblyProductAttribute("LicenciaSistemas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LicenciaSistemas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

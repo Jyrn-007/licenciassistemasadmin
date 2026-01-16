@@ -50,3 +50,4 @@ C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\refin
 C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\LicenciaSistemas.pdb
 C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\LicenciaSistemas.genruntimeconfig.cache
 C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\ref\LicenciaSistemas.dll
+C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\LicenciaSistemas.sourcelink.json
