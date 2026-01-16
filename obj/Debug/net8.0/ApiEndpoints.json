@@ -1,0 +1,97 @@
+[
+  {
+    "ContainingType": "LicenciaSistemas.Controllers.LicenciasController",
+    "Method": "GetAll",
+    "RelativePath": "api/Licencias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LicenciaSistemas.Controllers.LicenciasController",
+    "Method": "Create",
+    "RelativePath": "api/Licencias",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lic",
+        "Type": "LicenciaSistemas.Models.Licencia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LicenciaSistemas.Controllers.LicenciasController",
+    "Method": "GetByCodigo",
+    "RelativePath": "api/Licencias/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LicenciaSistemas.Controllers.LicenciasController",
+    "Method": "Update",
+    "RelativePath": "api/Licencias/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "lic",
+        "Type": "LicenciaSistemas.Models.Licencia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LicenciaSistemas.Controllers.LicenciasController",
+    "Method": "Delete",
+    "RelativePath": "api/Licencias/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LicenciaSistemas.Controllers.LicenciasController",
+    "Method": "Verificar",
+    "RelativePath": "api/Licencias/verificar/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

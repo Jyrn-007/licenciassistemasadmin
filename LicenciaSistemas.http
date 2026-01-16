@@ -1,0 +1,6 @@
+@LicenciaSistemas_HostAddress = http://localhost:5082
+
+GET {{LicenciaSistemas_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
