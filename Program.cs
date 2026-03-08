@@ -5,26 +5,32 @@ using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 🔧 Servicios
+// 🔹 Agregar servicios
 builder.Services.AddControllers();
+
+// Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// 🔹 Conexión MySQL
 builder.Services.AddSingleton<MySqlContext>();
 
 var app = builder.Build();
 
-// Swagger solo en desarrollo
+
+// 🔹 Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// Routing
-app.UseRouting();
+// HTTPS (recomendado)
+app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+// Mapear controladores
 app.MapControllers();
 
 app.Run();

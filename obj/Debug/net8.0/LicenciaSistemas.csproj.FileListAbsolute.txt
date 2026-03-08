@@ -35,6 +35,7 @@ C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\Licen
 C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\LicenciaSistemas.csproj.CoreCompileInputs.cache
 C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\LicenciaSistemas.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\LicenciaSistemas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\LicenciaSistemas.sourcelink.json
 C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -50,4 +51,3 @@ C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\refin
 C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\LicenciaSistemas.pdb
 C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\LicenciaSistemas.genruntimeconfig.cache
 C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\ref\LicenciaSistemas.dll
-C:\Users\USUARIO\OneDrive\Escritorio\api\LicenciaSistemas\obj\Debug\net8.0\LicenciaSistemas.sourcelink.json

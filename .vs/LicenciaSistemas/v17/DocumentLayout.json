@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\controllers\\licenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:controllers\\licenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\licenciasistemas.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:licenciasistemas.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\licenciasistemas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:licenciasistemas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\models\\licencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:models\\licencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\data\\mysqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:data\\mysqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\controllers\\licenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|solutionrelative:controllers\\licenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{583DD6AE-02DD-42AB-8D0F-8245584E023F}|LicenciaSistemas.csproj|c:\\users\\usuario\\onedrive\\escritorio\\api\\licenciasistemas\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
@@ -94,27 +74,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-03-08T05:29:20.834Z"
+              "DocumentIndex": 2,
+              "Title": "MySqlContext.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Data\\MySqlContext.cs",
+              "RelativeDocumentMoniker": "Data\\MySqlContext.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Data\\MySqlContext.cs",
+              "RelativeToolTip": "Data\\MySqlContext.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAYwA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T06:48:00.593Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Title": "LicenciasController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Controllers\\LicenciasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LicenciasController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Controllers\\LicenciasController.cs",
+              "RelativeToolTip": "Controllers\\LicenciasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T05:54:36.778Z",
+              "WhenOpened": "2026-01-16T05:51:52.214Z",
               "EditorCaption": ""
             },
             {
@@ -132,69 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-16T05:55:32.417Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MySqlContext.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Data\\MySqlContext.cs",
-              "RelativeDocumentMoniker": "Data\\MySqlContext.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Data\\MySqlContext.cs",
-              "RelativeToolTip": "Data\\MySqlContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T05:53:16.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Licencia.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Models\\Licencia.cs",
-              "RelativeDocumentMoniker": "Models\\Licencia.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Models\\Licencia.cs",
-              "RelativeToolTip": "Models\\Licencia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T05:52:53.385Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LicenciaSistemas.csproj",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\LicenciaSistemas.csproj",
-              "RelativeDocumentMoniker": "LicenciaSistemas.csproj",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\LicenciaSistemas.csproj",
-              "RelativeToolTip": "LicenciaSistemas.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-16T05:52:24.82Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LicenciasController.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Controllers\\LicenciasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LicenciasController.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Controllers\\LicenciasController.cs",
-              "RelativeToolTip": "Controllers\\LicenciasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T05:51:52.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -213,10 +132,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         },
