@@ -82,8 +82,7 @@
               "RelativeToolTip": "Data\\MySqlContext.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAYwA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T06:48:00.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T06:48:00.593Z"
             },
             {
               "$type": "Document",
@@ -93,7 +92,7 @@
               "RelativeDocumentMoniker": "Controllers\\LicenciasController.cs",
               "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\api\\LicenciaSistemas\\Controllers\\LicenciasController.cs",
               "RelativeToolTip": "Controllers\\LicenciasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAAAKUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T05:51:52.214Z",
               "EditorCaption": ""
@@ -108,8 +107,7 @@
               "RelativeToolTip": "LicenciaSistemas.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-01-16T07:17:47.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T07:17:47.786Z"
             },
             {
               "$type": "Document",
@@ -122,6 +120,16 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2026-01-16T09:28:44.125Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 91,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         },

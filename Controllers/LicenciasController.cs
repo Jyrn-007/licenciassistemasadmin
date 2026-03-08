@@ -170,19 +170,35 @@ namespace LicenciaSistemas.Controllers
             using var conn = _db.GetConnection();
             conn.Open();
 
-            string sql = "SELECT habilitado FROM licencias WHERE numero_habilitacion=@codigo LIMIT 1";
+            string sql = @"SELECT habilitado, descripcion_bloqueo 
+                   FROM licencias 
+                   WHERE numero_habilitacion=@codigo 
+                   LIMIT 1";
 
             using var cmd = new MySqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@codigo", codigo);
 
-            var result = cmd.ExecuteScalar();
+            using var reader = cmd.ExecuteReader();
 
-            if (result == null)
-                return NotFound(new { success = false });
+            if (!reader.Read())
+            {
+                return NotFound(new
+                {
+                    success = false,
+                    habilitado = false,
+                    descripcion_bloqueo = "Licencia no encontrada"
+                });
+            }
 
-            bool habilitado = Convert.ToInt32(result) == 1;
+            bool habilitado = reader.GetBoolean("habilitado");
+            string descripcionBloqueo = reader["descripcion_bloqueo"]?.ToString();
 
-            return Ok(new { success = true, habilitado });
+            return Ok(new
+            {
+                success = true,
+                habilitado = habilitado,
+                descripcion_bloqueo = descripcionBloqueo
+            });
         }
     }
 }
